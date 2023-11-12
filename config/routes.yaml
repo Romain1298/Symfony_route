@@ -1,0 +1,20 @@
+# config/routes.yaml
+homepage:
+  path: /
+  controller: App\Controller\DefaultController::helloWorld
+
+lemonde_redirect:
+  path: /lemonde
+  controller: App\Controller\LeMondeRedirect::redirectLeMonde
+
+person_info:
+  path: /person/{nom}/{prenom}
+  controller: App\Controller\Person::showPersonInfo
+
+browser_info:
+  path: /browser-info
+  controller: App\Controller\Browser::showBrowserInfo
+
+news_from_lemonde:
+  path: /news-from-lemonde
+  controller: App\Controller\DefaultController::showNewsFromLeMonde
